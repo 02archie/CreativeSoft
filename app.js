@@ -15,7 +15,7 @@ function compareNumbers(arr, num) {
     for (var i = 1; i < num - 1; i++) {
         // Validación, comparamos si el número de la izquierda es mayor al de la izquierda y al contrario 
         if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
-            console.log(arr[i]);
+            console.log(`El resultado es: ${arr[i]}`);
     }
 }
 //Se manda llamar la función y le pasamos como parametro el arreglo y la longitud del arreglo
@@ -67,7 +67,7 @@ function repeatWord(word) {
     // Eliminamos los valores repetidos
     let uniqueWords = [...new Set(divisiones)];
     // Imprimimos la respuesta
-    console.log(uniqueWords);
+    console.log(`El resultado es: ${uniqueWords.toString()}`);
 }
 
 // Mandamos llamar la función y le pasamos el string.
